@@ -1,0 +1,232 @@
+footer {
+  background: #1e1e1e;
+  color: #fff;
+  width: 100%;
+  padding: 40px 0 0;
+}
+
+.foot1 {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  gap: 40px;
+}
+
+#f1 h2,
+#f2 h2,
+#f3 h2,
+#f4 h2,
+#f4 h3,
+#f6 h2,
+#f7 h2 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#f5 {
+  margin-top: 38px;
+}
+
+#f7 {
+  margin-left: 150px;
+}
+
+#f1 a,
+#f2 a,
+#f3 a {
+  color: #ccc;
+  font-size: 14px;
+  text-decoration: none;
+  font-size: 10px;
+  display: block;
+  margin-bottom: 12px;
+  transition: 0.3s;
+}
+
+#f1 a:hover,
+#f2 a:hover,
+#f3 a:hover,
+.foot4 a:hover {
+  color: #fff;
+}
+
+/*Social media apps*/
+.foot2 {
+  display: flex;
+  gap: 60px;
+}
+
+#f4 p,
+#f5 p {
+  font-size: 10px;
+  color: #fffefe;
+  margin-bottom: 8px;
+}
+
+#btn1,
+#btn2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 175px;
+  height: 60px;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: 1.5px solid #323131;
+  border-radius: 45px;
+  background: transparent;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#btn1 i,
+#btn2 i {
+  font-size: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 28px;
+}
+
+.social-icons a {
+  color: #ccc;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+.gp-text,
+.appstore-text {
+  font-weight: 800;
+}
+
+/* Payment blablabla */
+.foot3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  border-top: 1px solid none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px;
+}
+
+.security-icons,
+.payment-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.security-icons i,
+.payment-icons i {
+  font-size: 24px;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.security-icons i:hover,
+.payment-icons i:hover {
+  color: #fff;
+}
+
+/*Copyright and shit */
+.foot4 {
+  border-top: 1px solid #333;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.foot4 a {
+  color: #ccc;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.accordion {
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.accordion details {
+  border-bottom: 1px solid #ffffff33;
+  padding: 15px 0;
+}
+
+.accordion summary {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion summary::after {
+  content: "⌄";
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.accordion details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.accordion details p {
+  margin: 8px 0 0 10px;
+  font-size: 14px;
+  color: #ffffffcc;
+}
+
+@media (max-width: 768px) {
+  .foot1,
+  .foot3 {
+    display: none;
+  }
+
+  .foot4 {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-top: none;
+  }
+
+  .accordion {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  #btn1,
+  #btn2 {
+    width: 180px;
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+
+  #btn1 i,
+  #btn2 i {
+    font-size: 18px;
+  }
+}
