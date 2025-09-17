@@ -1,3 +1,5 @@
+let currentlyDisplayed = 0;
+const productPerload = 30; 
 function displayLightningProducts(products){
     const limitedProducts = document.getElementById('limited-deals-products');
     
